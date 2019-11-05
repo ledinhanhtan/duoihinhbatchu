@@ -60,11 +60,6 @@ public class PTextField extends TextField {
                 } catch(Exception ignored) {}
             }
         });
-
-        //Play sound if only the key from A-Z
-        this.setOnKeyPressed(event -> {
-            if (event.getCode().getName().matches("[A-Z]")) { SoundMaker.click(); }
-        });
     }
 
     public int getIndex() {
