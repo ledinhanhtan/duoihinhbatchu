@@ -1,4 +1,5 @@
 # Đuổi hình bắt chữ
+Redeem code: soundmax
 Game Đuổi hình bắt chữ
 
 ![](screenshot/0.begin.JPG)
