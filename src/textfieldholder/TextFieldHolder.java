@@ -75,6 +75,8 @@ public class TextFieldHolder extends FlowPane implements Serializable {
 
 
             tfToAddListener.setOnKeyPressed(event -> {
+                //Play sound if only the key from A-Z
+                if (event.getCode().getName().matches("[A-Z]")) { SoundMaker.click(); }
                 //Move between text field using Arrow key
                 try {
                     switch (event.getCode()) {
