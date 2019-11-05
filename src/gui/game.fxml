@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="800.0" minWidth="600.0" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GameController">
+   <center>
+      <VBox fx:id="quizVBox" alignment="CENTER" prefHeight="480.0" prefWidth="600.0" spacing="40.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="293.0" fitWidth="435.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets bottom="40.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="40.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="125.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="buttonPane" alignment="CENTER" prefHeight="103.0" prefWidth="457.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets bottom="10.0" />
+               </HBox.margin>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="40.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="69.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="81.0" layoutY="16.0" mnemonicParsing="false" onAction="#hintBtnClicked" prefHeight="39.0" prefWidth="57.0" text="Gợi ý" />
+            <Label fx:id="levelLabel" alignment="CENTER" layoutX="234.0" layoutY="17.0" prefHeight="36.0" prefWidth="132.0" text="levelLabel">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="rubyLabel" alignment="CENTER_RIGHT" layoutX="532.0" layoutY="17.0" prefHeight="36.0" prefWidth="54.0" text="x">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#backBtnClicked" prefHeight="39.0" prefWidth="54.0" text="Trở về" />
+            <Button layoutX="401.0" layoutY="15.0" mnemonicParsing="false" onAction="#redeemBtnClicked" prefHeight="39.0" prefWidth="64.0" text="Redeem" />
+            <Label fx:id="rubyLabel1" alignment="CENTER_RIGHT" layoutX="471.0" layoutY="18.0" prefHeight="36.0" prefWidth="67.0" text="Ruby:">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

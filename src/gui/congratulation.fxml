@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="800.0" minWidth="600.0" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CongratulationController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="94.0" layoutY="99.0" prefHeight="125.0" prefWidth="413.0" text="CHÚC MỪNG!" textAlignment="CENTER">
+               <font>
+                  <Font size="47.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="180.0" layoutY="203.0" prefHeight="69.0" prefWidth="240.0" text="Bạn đã tìm ra đáp án: " textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <HBox layoutX="197.0" layoutY="428.0" prefHeight="45.0" prefWidth="207.0" spacing="5.0">
+               <children>
+                  <Label prefHeight="45.0" prefWidth="124.0" text="Bạn được tặng:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rubyIncrementLabel" alignment="CENTER" prefHeight="45.0" prefWidth="32.0" text="x">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="47.0" prefWidth="44.0" text="Ruby">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <FlowPane fx:id="answerHolder" alignment="CENTER" hgap="20.0" layoutX="42.0" layoutY="273.0" prefHeight="113.0" prefWidth="533.0" vgap="10.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="142.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="nextButton" layoutX="262.0" layoutY="33.0" mnemonicParsing="false" onAction="#nextBtnClicked" prefHeight="38.0" prefWidth="77.0" text="Tiếp tục">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
