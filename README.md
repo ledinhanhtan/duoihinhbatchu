@@ -24,3 +24,17 @@ Chúc mừng
 Xác nhận thoát game
 
 ![](screenshot/4.confirmation.JPG)
+
+
+Những kỹ thuật sử dụng:
+- Extend class
+- Serializable/Deserializable
+- Map
+- Runnable
+- Timer Task
+- Thread
+- FXML
+- Scene builder
+- Task class
+- I/O
+- Regex
